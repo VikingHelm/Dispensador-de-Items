@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispensador de Chucherías - Fernando Vera</title>
+    <link rel="icon" type="image/x-icon" href="/img/pngimg.com-viking_PNG82.ico">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <main>
+        <div class="start">
+            <h1 class="title">Dispensador de Chucherías</h1>
+        <p> - Haga click en el menú desplegable para comenzar - </p>
+        </div>
+        
+        <div class="menu">
+            <div class="hamburger-div">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-icon" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </div>
+            <div class="panel">
+                <h1>Menú Principal</h1>
+                <button class="button" id="showInput">Solicitar chuchería</button>
+                <button class="button" id="showCandy">Mostrar chucherías</button>
+                <button class="button" id="showAdmin">Rellenar chuchería</button>
+                <button class="button" id="showExit">Salir del programa</button>
+                <div class="close-icon">X</div>
+            </div>
+        </div>
+
+
+        <div id="container">
+            <table id="items">
+                <tr>
+                    <th></th>
+                    <th>0</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+                <tr>
+                    <th>0</th>
+                    <td class="card" id="item-box position-00">
+                        <div>
+                            <p id="position">Input: (00)</p>
+                            <div id="img"><img src="/img/kitkat.jpg" alt="KitKat"></div>
+                            <p id="name">KitKat</p>
+                            <p id="price">$1.1</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-01">
+                        <div>
+                            <p id="position">Input: (01)</p>
+                            <div id="img"><img src="/img/samba.jpg" alt="KitKat"></div>
+                            <p id="name">Samba</p>
+                            <p id="price">$0.8</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-02">
+                        <div>
+                            <p id="position">Input: (02)</p>
+                            <div id="img"><img src="/img/coco.jpg" alt="KitKat"></div>
+                            <p id="name">Cocosette</p>
+                            <p id="price">$1.5</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-03">
+                        <div>
+                            <p id="position">Input: (03)</p>
+                            <div id="img"><img src="/img/polvorosas-2.jpg" alt="KitKat"></div>
+                            <p id="name">Polvorosas</p>
+                            <p id="price">$0.9</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td class="card" id="item-box position-11">
+                        <div>
+                            <p id="position">Input: (10)</p>
+                            <div id="img"><img src="/img/oreo.jpg" alt="KitKat"></div>
+                            <p id="name">Oreo</p>
+                            <p id="price">$1.8</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-12">
+                        <div>
+                            <p id="position">Input: (11)</p>
+                            <div class="panel">
+                                <h1>Menú Principal</h1>
+                                <button class="button" id="showInput">Solicitar chuchería</button>
+                                <button class="button" id="showCandy">Mostrar chucherías</button>
+                                <button class="button" id="showAdmin">Rellenar chuchería</button>
+                                <button class="button" id="showExit">Salir del programa</button>
+                                <div class="close-icon">X</div>
+                            </div>
+                            <div id="img"><img src="/img/ruffles-natural-125gr-Fresh.webp" alt="KitKat"></div>
+                            <p id="name">Ruffles</p>
+                            <p id="price">$1</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-13">
+                        <div>
+                            <p id="position">Input: (12)</p>
+                            <div id="img"><img src="/img/doritosjpg.webp" alt="KitKat"></div>
+                            <p id="name">Doritos</p>
+                            <p id="price">$1.2</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-14">
+                        <div>
+                            <p id="position">Input: (13)</p>
+                            <div id="img"><img src="/img/twix.webp" alt="KitKat"></div>
+                            <p id="name">Twix</p>
+                            <p id="price">$1</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td class="card" id="item-box position-31">
+                        <div>
+                            <p id="position">Input: (20)</p>
+                            <div id="img"><img src="/img/oreo.jpg" alt="KitKat"></div>
+                            <p id="name">Oreo</p>
+                            <p id="price">$1.8</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-32">
+                        <div>
+                            <p id="position">Input: (21)</p>
+                            <div id="img"><img src="/img/m&ms.webp" alt="KitKat"></div>
+                            <p id="name">M&Ms</p>
+                            <p id="price">$1.3</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-33">
+                        <div>
+                            <p id="position">Input: (22)</p>
+                            <div id="img"><img src="/img/lays.jpg" alt="KitKat"></div>
+                            <p id="name">Lays</p>
+                            <p id="price">$1.2</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-34">
+                        <div>
+                            <p id="position">Input: (23)</p>
+                            <div id="img"><img src="/img/chicle.jpg" alt="KitKat"></div>
+                            <p id="name">Chicles</p>
+                            <p id="price">$0.8</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td class="card" id="item-box position-12">
+                        <div>
+                            <p id="position">Input: (30)</p>
+                            <div id="img"><img src="/img/polvorosas-2.jpg" alt="KitKat"></div>
+                            <p id="name">Polvorosas</p>
+                            <p id="price">$1.5</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-12">
+                        <div>
+                            <p id="position">Input: (31)</p>
+                            <div id="img"><img src="/img/clubsocial.jpg" alt="KitKat"></div>
+                            <p id="name">Club Social</p>
+                            <p id="price">$1.1</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-12">
+                        <div>
+                            <p id="position">Input: (32)</p>
+                            <div id="img"><img src="/img/torta.jpg" alt="KitKat"></div>
+                            <p id="name">Torta</p>
+                            <p id="price">$1.1</p>
+                        </div>
+                    </td>
+                    <td class="card" id="item-box position-12">
+                        <div>
+                            <p id="position">Input: (33)</p>
+                            <div id="img"><img src="/img/kitkat.jpg" alt="KitKat"></div>
+                            <p id="name">KitKat</p>
+                            <p id="price">$1.1</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <div id="input">
+            <div id="input-content">
+                <p>Ingrese la posición de la chuchería solicitada
+                    y presione la tecla "Enter":</p>
+                
+
+                <div class="candy-search">
+                    <input type="number" id="input-search" />
+                </div>
+                <br>
+                <div class="candy-request">
+                    <div class="candy-result"></div>
+                </div>
+                <div class="candy-notification"></div>
+            </div>
+        </div>
+
+        <div id="admin">
+            <div id="admin-content">
+                <div class="adminPassword">
+                    <h1>PASSWORD:</h1>
+                    <br>
+                    <input type="password" name="password" id="password">
+                    <br>
+                    <br>
+                    <div id="showPassword">
+                        <input type="checkbox" onclick="showPassword()"> Mostrar contraseña
+                    </div>
+                </div>
+
+                <div class="adminFunction">
+                    <h1>Ingrese la posición del ítem y la cantidad a rellenar:</h1>
+
+
+                    <div class="addQuantity">
+
+                        <div class="inputAdmin">
+                            <p>Añadir:&nbsp; </p>
+                            <input type="number" id="input-addAdmin" min=0.01 step=0.01
+                                onkeypress="return event.charCode != 45" />
+                        </div>
+
+                        <div class="inputAdmin">
+                            <p>Input:&nbsp; </p>
+                            <input type="number" id="input-admin" />
+                        </div>
+
+
+
+                        <button class="button button-admin boton" onclick="">Rellenar ítem</button>
+                    </div>
+
+                    <div class="candy-request-admin">
+                        <div class="candy-result-admin"></div>
+                    </div>
+                    <div class="fill-message"></div>
+                    <div class="no-results"></div>
+
+
+
+                </div>
+                <div class="errorAdmin"></div>
+
+            </div>
+
+        </div>
+
+        <div id="exit">
+            <div id="exitPanel">
+                <div id="exitContent">
+                    <h1><u>Total de ventas</u></h1>
+                    <br>
+                    <div id="salesReport"></div>
+                    <div id="poverty"></div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </main>
+
+
+
+    <script src="db.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

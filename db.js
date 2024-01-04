@@ -1,0 +1,117 @@
+const candy = [
+    {
+        name: "KitKat",
+        price: 1.1,
+        quantity: 10,
+        position: "00",
+        img: "/img/kitkat.jpg",
+        cart: 0
+    },
+    {
+        name: "Samba",
+        price: 0.8,
+        quantity: 10,
+        position: "01",
+        img: "/img/samba.jpg",
+        cart: 0
+    }, 
+    {
+        name: "Cocosette",
+        price: 1.5,
+        quantity: 10,
+        position: "02",
+        img: "/img/coco.jpg",
+        cart: 0
+    }, {
+        name: "Polvorosas",
+        price: 0.9,
+        quantity: 10,
+        position: "03",
+        img: "/img/polvorosas-2.jpg",
+        cart: 0
+    }, {
+        name: "Oreo",
+        price: 1.8,
+        quantity: 10,
+        position: "10",
+        img: "/img/oreo.jpg",
+        cart: 0
+    }, {
+        name: "Ruffles",
+        price: 1,
+        quantity: 10,
+        position: "11",
+        img: "/img/ruffles-natural-125gr-Fresh.webp",
+        cart: 0
+    }, {
+        name: "Doritos",
+        price: 1.2,
+        quantity: 10,
+        position: "12",
+        img: "/img/doritosjpg.webp",
+        cart: 0
+    }, {
+        name: "Twix",
+        price: 1,
+        quantity: 10,
+        position: "13",
+        img: "/img/twix.webp",
+        cart: 0
+    }, {
+        name: "Oreo",
+        price: 1.8,
+        quantity: 10,
+        position: "20",
+        img: "/img/oreo.jpg",
+        cart: 0
+    }, {
+        name: "M&Ms",
+        price: 1.3,
+        quantity: 10,
+        position: "21",
+        img: "/img/m&ms.webp",
+        cart: 0
+    }, {
+        name: "Lays",
+        price: 1.2,
+        quantity: 10,
+        position: "22",
+        img: "/img/lays.jpg",
+        cart: 0
+    }, {
+        name: "Chicles",
+        price: 0.8,
+        quantity: 10,
+        position: "23",
+        img: "/img/chicle.jpg",
+        cart: 0
+    }, {
+        name: "Polvorosas",
+        price: 1.5,
+        quantity: 10,
+        position: "30",
+        img: "/img/polvorosas-2.jpg",
+        cart: 0
+    }, {
+        name: "Club Social",
+        price: 1.1,
+        quantity: 10,
+        position: "31",
+        img: "/img/clubsocial.jpg",
+        cart: 0
+    }, {
+        name: "Torta",
+        price: 1.1,
+        quantity: 10,
+        position: "32",
+        img: "/img/torta.jpg",
+        cart: 0
+    }, {
+        name: "Kit Kat",
+        price: 1.1,
+        quantity: 10,
+        position: "33",
+        img: "/img/kitkat.jpg",
+        cart: 0
+    }
+]

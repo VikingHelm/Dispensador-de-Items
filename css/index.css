@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Bebas Neue;
+
+  
+}
+
+body {
+  width: 100%;
+  background-image: url(/img/image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+#container {
+  display: none;
+}
+
+#items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  font-size: 2rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 1.5rem;
+}
+
+.item-box {
+  margin: 0 2rem 2rem 2rem;
+
+}
+
+.item-box p {
+  font-size: 25px;
+}
+
+#items img {
+  display: block;
+  width: 240px;
+  height: 240px;
+  background-repeat: no-repeat;
+
+}
+
+th,
+td {
+  border: 0.2rem solid black;
+  padding: 1rem;
+  text-align: center;
+}
+
+th {
+  background: rgb(252, 70, 107);
+  background: radial-gradient(circle, rgba(252, 70, 107, 1) 0%, rgb(107, 2, 93) 100%);
+}
+
+.card {
+  background-color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.button {
+  font-weight: 0;
+  font-size: 2.8rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+  padding: 1rem 3rem;
+  border: solid #ffffff 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 10px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.button:hover {
+  transition: 1000ms;
+  transform: translateY(-0px);
+  color: #ffffff;
+  background: linear-gradient(90deg, #04315f 0%, #430346 100%);
+  border: solid 2px #ffffff;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #dfe0df, 0 0 40px #ffffff, 0 0 80px #ffffff;
+}
+
+
+
+.price {
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.panel {
+  background-image: linear-gradient(134.6deg, rgba(201, 37, 107, .95) 15.4%, rgba(116, 16, 124, .95) 74.7%);
+  position: fixed;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 2%;
+  display: none;
+
+
+
+}
+
+.panel h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.hamburger-div {
+  position: fixed;
+  cursor: pointer;
+  color: #ffffff;
+  width: 6%;
+  padding: 1.5rem;
+  font-size: 3rem;
+  padding: .2rem;
+
+}
+
+.hamburger-icon {
+
+  border: #ffffff 1px solid;
+  padding: .5rem;
+}
+
+#input.show {
+  display: block;
+}
+
+#container.show {
+  display: block;
+}
+
+#admin.show {
+  display: block;
+}
+
+
+
+.close-icon {
+  position: absolute;
+  color: #ffffff;
+  top: 5px;
+  padding: .2rem;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: #ffffff 1px solid;
+  border-radius: 25%;
+}
+
+
+
+
+
+#input {
+  display: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5rem;
+  padding: 8rem;
+  display: none;
+}
+
+#input-content {
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(134.6deg, rgba(201, 37, 107, .95) 15.4%, rgba(116, 16, 124, .95) 74.7%);
+  padding: 5rem;
+  font-size: 1.9rem;
+}
+
+#input-search {
+  text-align: center;
+}
+
+.candy-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.candy-request, .candy-request-admin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.candy-result, .candy-result-admin {
+  margin: 0 2rem 2rem 2rem;
+  font-size: 5rem;
+  
+}
+
+.candy-result img, .candy-result-admin img {
+  width: 16rem;
+  height: 15rem;
+}
+
+.candy-result p, .candy-result-admin p {
+  font-size: 3.5rem;
+}
+
+.candy-result button, .candy-result-admin button {
+  border: .2rem black solid;
+}
+
+#btn-subtract {
+  padding-bottom: 1rem;
+}
+
+
+#admin {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5rem;
+  padding: 8rem;
+  display: none;
+}
+
+#admin-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(134.6deg, rgba(201, 37, 107, .95) 15.4%, rgba(116, 16, 124, .95) 74.7%);
+  padding: 5rem;
+  font-size: 1.9rem;
+}
+
+.addQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.1rem;
+  gap: 1rem;
+}
+
+#input-admin, #input-addAdmin {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button-admin {
+  font-size: 1.2rem;
+}
+
+#password {
+  padding: .5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#showPassword {
+  font-size: 1.2rem;
+}
+
+.adminFunction {
+  display: none;
+}
+
+.inputAdmin {
+  display: flex;
+  flex-direction: column;
+}
+
+#exit {
+  display: none
+}
+
+#exitPanel {
+  padding: 5rem;
+  background-image: linear-gradient(134.6deg, rgba(201, 37, 107, .95) 15.4%, rgba(116, 16, 124, .95) 74.7%); 
+  margin: auto; 
+  margin-top: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+  padding: 20px;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+
+#exitContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: #A9C9FF;
+background-image: linear-gradient(180deg, #fadada 0%, #f889d8 100%);
+;
+}
+
+.start {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.6rem;
+  color: rgb(14, 9, 14);
+}
